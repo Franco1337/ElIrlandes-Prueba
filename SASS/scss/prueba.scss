@@ -1,0 +1,12 @@
+
+$rojo:  rgb(255, 40, 40);
+$titulo-fuente: normal 24px/1.5 'Open Sans';
+
+
+
+
+h1.title
+{
+    font: $titulo-fuente;
+    color: $rojo;
+}

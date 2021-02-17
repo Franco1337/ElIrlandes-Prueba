@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../assets/css/estilos.css" type="text/css"> 
+</head>
+
+<body>
+    <div id="FormCompraCss">
+        <header>
+            <a href="../index.html">INICIO</a>
+            <a href="./TiposdeCerveza.html">TIPOS DE CERVEZA</a>
+            <a href="./ShopBeer.html">SHOPBEER</a>
+            <a href="./Fabricacion.html">FABRICACION</a>
+        </header>
+        <br><br>
+        <p>Monto a pagar: $</p>
+        <br><br>
+        <!-------------------------Caja/s de Ingreso/s----------------------------->
+
+        <fieldset>
+            <form>
+            <legend> Proceso de pago </legend>
+                
+                <label for="nombrefirst">Nombre: </label>
+                <br>
+                <input type="text" id="nombre" name="nombre">
+                <br><br>
+
+                <label for="lastname">Apellido: </label>
+                <br>
+                <input type="text" id="apellido" name="apellido">
+                <br><br>
+
+                <label for="email">Email: </label>
+                <br>
+                <input type="email" id="email" name="email">
+                <br><br>
+
+                <label for = "cantidad"> Cantidad: </label>
+                
+                <select name="cantidad" id="cantidad">
+                    <option value=1> 1 </option>
+                    <option value=2> 2 </option>
+                    <option value=3> 3 </option>
+                    <option value=5> Mas de 5 </option>
+                </select>
+                
+                
+                <br><br>
+                <label for="eleccion">¿Te lo enviamos o lo pasas a retirar?</label>
+                <br>
+                    <input type="radio" id="Local" value="Local">
+                    <label for="Local">Paso a retirar!</label>
+                <br>
+                    <input type="radio" id="Envio" value="Envio">
+                    <label for="Envio">Necesito que me lo envien.</label>
+                <br><br>
+                    <textarea name="mensaje" id="mensaje" cols="50" rows="5" placeholder="Comentarios..."></textarea>
+                <br><br>
+                
+                    <label for="ofertas">Quieres recibir en tu correo nuestras ofertas?</label>
+                    <input type="checkbox" id="a" name="a">
+                <br><br><br>    
+
+                <input type="submit" value="Completar compra">
+                <br><br>
+                <input type="reset" value="limpiar formulario">
+            </form>
+        </fieldset>
+    </div>
+
+    <p>...Texto e informacion de la factura...</p>
+
+</body>
+</html>

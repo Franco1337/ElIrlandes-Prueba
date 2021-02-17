@@ -1,0 +1,421 @@
+
+
+
+
+/* ||||||||||||||||||||||||||||||       GLOBALES      |||||||||||||||||||||||||||||| */
+
+body
+{
+    background-attachment: fixed;
+    background-size: 100%;
+    background-color:transparent;
+}
+
+.container-fluid
+{
+    background-color: rgb(207, 197, 162);
+    color: #000;
+}
+.navbar-brand
+{
+    color: black;
+}
+.nav-link
+{
+    color: black;
+}
+.nav-link
+{
+    color: black;
+}
+.nav-item
+{
+    color: black;
+}
+
+.btn
+ {
+    color: #000000;
+    border-color: #ffc524;
+}
+
+
+@media screen and (max-width: 2108px)
+{
+  body
+    {
+        background-image: url("../../img/fond.jpg");
+    }
+    .Musica
+    {
+        position: relative;
+        margin-top: 20%;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 800px)
+{
+  body
+    {
+        background-image: url("../../img/600x800.jpg");
+        background-attachment: initial;
+    }
+    .Musica
+    {
+        position: relative;
+        margin-top: 85%;
+    }
+    .container
+    {
+        margin-top: 55%;
+        padding-right: 100px;
+        align-items: center;
+    }
+    
+}
+
+/* Links */
+a:link
+{
+    color: rgb(25, 110, 25);
+}
+a:visited
+{
+    color: rgb(7, 48, 7);
+}
+a:hover
+{
+    color: rgb(43, 160, 43);
+}
+
+/* Propiedades de cada Cerveza */
+
+.TituloCerveza
+{
+   /*color*/
+   color: rgb(4, 19, 7);
+   background-color: rgb(207, 197, 162);
+   /*padding*/
+   padding-right: 15px;
+   padding-left: 15px;
+   /*margen*/
+   margin: 15px;
+   /*animacion*/
+   animation-duration: 2s;
+   animation-name: aparecer;
+   animation-iteration-count: 1; 
+}
+
+.ListaCerveza
+{
+    color: rgb(3, 61, 3);
+    background-color: rgb(185, 174, 144);
+    border: 1px;
+    color: rgb(32, 24, 11);
+    margin: 15px;
+}
+
+
+/*---------------------- Seccion de musica y sociales flotantes -----------------*/
+/*Musica*/
+.Musica
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    font-size: 12px;
+    width: 320px;
+    padding-left: 10px;
+    
+    background-color: rgb(206, 168, 86);
+    border-radius: 5px; 
+    font-weight: bold;
+}
+/*Sociales*/
+#sociales
+{
+    padding-left: 70px;
+    background-color: rgb(206, 168, 86);
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+/* ||||||||||||||||||||||||||||||        INDEX        |||||||||||||||||||||||||||||| */
+/*Titulo*/
+.TituloPrincipal
+{
+    /*color*/
+    color: rgb(4, 19, 7);
+    background-color: rgb(207, 197, 162);
+    /*padding*/
+    padding-right: 15px;
+    padding-left: 15px;
+    /*margen*/
+    margin: 15px;
+    /*animacion*/
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+}
+/*funcion animacion*/   
+@keyframes aparecer
+{
+    0% 
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+        font-size: 15px;
+    }
+}
+
+
+
+/*----------------------------- Seccion del carrusel ----------------------------*/
+/*carrusel*/
+.row
+{
+    align-items: center;
+    padding-left: 220px;
+}
+
+
+
+/*---------------------- Seccion de pie de pagina ----------------------*/
+.InfoPie h6
+{  
+    background-color: transparent;
+    font-size: 20px;
+    text-align: center;
+    color: white; 
+    padding-top: 250px;
+    padding-right: 150px;
+    padding-left: 150px;
+    margin: 50px;
+    position:static;
+}
+
+
+
+
+
+
+/* ||||||||||||||||||||||||||||||       FABRICACION       |||||||||||||||||||||||||||||| */
+
+/*Titulo fabricacion*/
+.TituloFabricacion
+{
+    /*color*/
+    color: rgb(4, 19, 7);
+    background-color: rgb(207, 197, 162);
+    /*padding*/
+    padding-right: 15px;
+    padding-left: 50px;
+    /*margen*/
+    margin: 15px;
+    /*animacion*/
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+}
+
+/* Imagen final de fabricacion */
+.imgFabricacion
+{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+/*Ordenanza de los pasos*/
+.row-3
+{
+    padding: 50px;
+    margin: 50px;
+}
+
+/* -----------------------seccion Grid de fabricacion ------------------ */
+#PasosFabricacion 
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+}
+
+/* ------------------------------ Pasos ------------------------------ */
+#Paso1
+{
+    font-size: 15px;
+    color: rgb(2, 8, 2);
+    background-color: rgb(208, 214, 198);
+    border: 5px solid rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    padding: 20px;
+}
+
+#Paso2
+{
+    font-size: 15px;
+    color: rgb(2, 8, 2);
+    background-color: rgb(208, 214, 198);
+    border: 5px solid rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    padding: 20px;
+}
+
+
+#Paso3
+{
+    font-size: 15px;
+    color: rgb(2, 8, 2);
+    background-color: rgb(208, 214, 198);
+    border: 5px solid rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    padding: 20px;
+}
+
+#Paso4
+{
+    font-size: 15px;
+    color: rgb(2, 8, 2);
+    background-color: rgb(208, 214, 198);
+    border: 5px solid rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    padding: 20px;
+}
+
+#Paso5
+{
+    font-size: 15px;
+    color: rgb(2, 8, 2);
+    background-color: rgb(208, 214, 198);
+    border: 5px solid rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    padding: 20px;
+}
+
+#Paso6
+{
+    font-size: 15px;
+    color: rgb(2, 8, 2);
+    background-color: rgb(208, 214, 198);
+    border: 5px solid rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+    padding: 20px;
+}
+
+#Paso7
+{
+    font-size: 15px;
+    color: rgb(2, 8, 2);
+    background-color: rgb(208, 214, 198);
+    border: 5px solid rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    grid-column: 1 / span 3;
+    grid-row: 3 / span 1;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* ||||||||||||||||||||||||||||||       TIPOS DE CERVEZA       |||||||||||||||||||||||||||||| */
+
+/*Titulo tipos de cerveza*/
+.TituloTipos-de-cerveza
+{
+    /*color*/
+    color: rgb(4, 19, 7);
+    background-color: rgb(207, 197, 162);
+    /*padding*/
+    padding-right: 15px;
+    padding-left: 50px;
+    /*margen*/
+    margin: 15px;
+    /*animacion*/
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+}
+
+.list-group-item.list-group-item-action.active
+{
+    background-color: rgb(247, 232, 178);
+    color: #000;
+    border-color: rgb(32, 24, 11);
+    
+}
+.list-group-item.list-group-item-action
+{
+    background-color: rgb(229, 220, 186);
+    color: #000;
+    border-color: rgb(32, 24, 11);
+    border-radius: 2px;
+}
+
+/* ||||||||||||||||||||||||||||||       SHOPBEER       |||||||||||||||||||||||||||||| */
+
+/*Titulo shopbeer*/
+.TituloShopbeer
+{
+    /*color*/
+    color: rgb(4, 19, 7);
+    background-color: rgb(207, 197, 162);
+    /*padding*/
+    padding-right: 15px;
+    padding-left: 50px;
+    /*margen*/
+    margin: 15px;
+    /*animacion*/
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+}
+
+.card-body
+{
+    background-color: rgb(207, 197, 162);
+}
+.btn.btn-primary.stretched-link
+{
+    background-color: rgb(26, 24, 20);
+    border-color: rgb(46, 43, 34);
+    color: rgb(207, 197, 162);
+}
+
+/* ----------------  Formulario compra ------------- */
+
+#FormCompraCss
+{
+    width: 600px;
+    padding-top: 5px;
+    
+}
